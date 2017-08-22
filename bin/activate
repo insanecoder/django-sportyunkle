@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/var/www/html/sportyunkle"
+VIRTUAL_ENV="/var/www/html/django-sportyunkle"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

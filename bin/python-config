@@ -1,4 +1,4 @@
-#!/var/www/html/sportyunkle/bin/python
+#!/var/www/html/django-sportyunkle/bin/python
 
 import sys
 import getopt
