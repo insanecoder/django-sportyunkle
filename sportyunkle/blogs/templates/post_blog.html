@@ -1,0 +1,9 @@
+{% extends 'base_sportyunkle.html' %}
+{% block content %}
+<form method="get" action="{% url 'save_blog' %}">
+    {% csrf_token %}
+    <input type="hidden" name="ID" value="{{ id }}" />
+ 	{{ form.as_p}}
+      <button type="submit" >Save</button>
+</form>
+{% endblock content %}

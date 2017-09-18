@@ -43,6 +43,7 @@ DJANGO_APPS = [
 
     # Admin
     'django.contrib.admin',
+    'blogs'
 ]
 THIRD_PARTY_APPS = [
     'crispy_forms',  # Form layouts
@@ -112,7 +113,7 @@ DATABASES = {
     # 'default': env.db('DATABASE_URL', default='postgres:///sportyunkle'),
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
+        'NAME': 'sportyunkle',
         'USER': 'root',
         'PASSWORD': '123',
         'HOST': '127.0.0.1',

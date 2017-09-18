@@ -16,6 +16,8 @@ urlpatterns = [
     url(r'^users/', include('sportyunkle.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
+    url(r'^blogs/', include('blogs.url')),
+
     # Your stuff: custom urls includes go here
 
 
