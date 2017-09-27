@@ -3,7 +3,7 @@ from .models import *
 
 class PostForm(forms.ModelForm):
     creatorID = forms.ModelChoiceField(to_field_name='id',queryset=User.objects.all(),widget=forms.Select(attrs={'style':'background_color:#F5F8EC'}))
-    tags = forms.ModelChoiceField(required=False,to_field_name='id',queryset=Tag.objects.all(),widget=forms.Select(attrs={'style':'background_color:#F5F8EC'}))
+    tags = forms.ModelMultipleChoiceField(required=False,to_field_name='id',queryset=Tag.objects.all(),widget=forms.Select(attrs={'style':'background_color:#F5F8EC'}))
     # tags = forms.ModelMultipleChoiceField(
     #     to_field_name='tagName', # set the value to slug field, not pk/id
     #     required=False,

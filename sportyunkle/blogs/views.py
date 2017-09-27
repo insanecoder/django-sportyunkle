@@ -26,12 +26,11 @@ def save_blog(request):
 	if id:
 		f= get_object_or_404(BlogPost,id=id)
 		f= PostForm(request.GET,instance=f)
-		f=f.save(commit=False)
-		f.tags= tag
 		f.save()
 	else:
 		form= PostForm(request.GET)
-		blogPost= form.save(commit=False)
-		blogPost.t= tagObj
-		blogPost.save()
+		blogPost= form.save()
 	return render(request, 'save_blog.html', {})
+
+def home_page(request):
+	return render(request, 'home_page.html', {})
